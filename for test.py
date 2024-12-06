@@ -1,5 +1,5 @@
 def fib(n):
-    a,b,result= 10, 20 , 0
+    a,b,res= 10, 20 , 0
     if n == 1:
         print(a)
     if n == 2:
@@ -7,7 +7,7 @@ def fib(n):
     for i in range(n-2):
        res = a+b
        a,b = b, res
-    print(result)
+    print(res)
 
 fib(6)
 print("Should be in adds branch")
