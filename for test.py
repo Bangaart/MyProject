@@ -9,7 +9,7 @@ def fib(n):
        a,b = b, res
     print(res)
 
-fib(6)
+fib(8)
 
 print("second main changes")
 print("Should be in adds branch")
