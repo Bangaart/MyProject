@@ -1,14 +1,18 @@
-class Point:
-    def __init__(self, x,y):
-        self.x = x
-        self.y = y
+class Notebook:
 
-    def __len__(self):
-        return 0
-    def __bool__(self):
-        print("bool")
-        return self.x == self.y
+    def __init__(self,notes):
+        self.notes = list(notes)
 
+    def __getitem__(self, item):
+        return self.notes[item]
 
-b = Point(1,1)
-print(bool(b))
+    def __setitem__(self, key, value):
+        if key >= 0:
+            self.notes[key] = value
+
+    def __delitem__(self, key):
+        del self.notes[key]
+
+bebra = Notebook([33, 45])
+
+print(bebra[1])
